@@ -1,0 +1,62 @@
+# Portfolio de Mameri Yousra
+
+## Description
+Bienvenue sur mon portfolio !  
+Je suis **Mameri Yousra**, étudiante en génie logiciel et développeuse full-stack.  
+Ce portfolio présente mes projets, compétences et expériences, disponible en **français et anglais**. Il inclut également une page 404 personnalisée pour les pages introuvables.
+
+---
+
+## Structure du projet
+index-fr.html → Page d’accueil en français
+index-en.html → Page d’accueil en anglais
+404-fr.html → Page d’erreur en français
+404-en.html → Page d’erreur en anglais
+styles/style.css → Fichier CSS principal
+script/script.js → Fichier JavaScript pour navigation et animations
+assets/ → Image et CV - fichiers statiques
+
+---
+
+## Fonctionnalités
+
+- Navigation fluide entre sections : Accueil, À propos, Compétences, Projets, Contact  
+- Switch de langue **FR / EN**  
+- Animations pour les barres de compétences  
+- Téléchargement du CV  
+- Formulaire de contact fonctionnel avec **EmailJS**  
+- Page 404 personnalisée bilingue  
+
+---
+
+## Instructions d’utilisation
+
+1. Ouvrir `index-fr.html` ou `index-en.html` dans un navigateur pour voir le portfolio.  
+2. Les liens vers les projets et le CV sont relatifs aux fichiers présents dans le dossier `assets/`.  
+3. Pour le formulaire de contact, remplacez la clé EmailJS par la vôtre si nécessaire.  
+
+---
+
+## Technologies utilisées
+
+- **HTML, CSS, JavaScript**  
+- **Font Awesome** pour les icônes  
+- **EmailJS** pour le formulaire de contact  
+
+---
+
+## Live Demo
+Vous pouvez visualiser le portfolio en ligne à l’adresse :  
+[🔗 Live Demo](https://ton-site.netlify.app) *(remplace par ton URL Netlify)*
+
+---
+
+## Licence
+Ce projet est sous licence **MIT**.  
+Voir le fichier `LICENSE` pour plus de détails.
+
+---
+
+## Contact
+- Email : mameriyousra@gmail.com  
+- GitHub : [github.com/Yousra-Mameri](https://github.com/yousramameri)  

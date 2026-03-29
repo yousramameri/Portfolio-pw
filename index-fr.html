@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mameri Yousra | Portfolio</title>
+<link rel="stylesheet" href="styles/style.css">
+<!-- Font Awesome pour les icônes -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- EmailJS pour le formulaire de contact -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("J4Yj5FXjZM7coxJQs"); 
+</script>
+</head>
+<body>
+
+<!-- MENU hamburger pour mobile -->
+<div class="hamburger" id="hamburger" onclick="toggleMenu()">
+  <span></span><span></span><span></span>
+</div>
+
+<!-- HEADER -->
+<header>
+  <h2 class="logo">YousraDev</h2>
+  <nav class="main-nav" id="main-nav">
+    <ul>
+      <li><a href="#" onclick="goToPage(0); closeMenu()">Accueil</a></li>
+      <li><a href="#" onclick="goToPage(1); closeMenu()">À propos</a></li>
+      <li><a href="#" onclick="goToPage(2); closeMenu()">Compétences</a></li>
+      <li><a href="#" onclick="goToPage(3); closeMenu()">Projets</a></li>
+      <li><a href="#" onclick="goToPage(4); closeMenu()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="lang-switch">
+    <a href="index-en.html">EN</a> | 
+    <a href="index-fr.html">FR</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <div class="hero-text">
+        <h3><i>Bonjour, je suis</i></h3>
+        <h1>MAMERI YOUSRA</h1>
+        <p><i>Étudiante en génie logiciel & Développeuse Full Stack</i></p>
+        <div class="buttons">
+          <button onclick="goToPage(3)" class="btn">Voir les projets</button>
+          <a href="/assets/YousraMameriCV.pdf" class="btn-outline" download>Télécharger le CV</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="/assets/img.jpg" alt="Yousra Mameri">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="page">
+    <div class="about container">
+      <h1 class="title">À <span>Propos</span></h1>
+      <p class="subtitle"><i>Allier expertise technique et esprit entrepreneurial</i></p>
+      <div class="grid">
+        <div class="left">
+          <h2><i>Étudiante en génie logiciel & Développeuse Full Stack</i></h2>
+          <p>J'ai <strong>21 ans</strong> et je suis actuellement une <strong>étudiante en 3ème année de génie logiciel</strong>, formée par de <strong>très bons enseignants</strong>. Je suis passionnée par le <strong>développement web</strong> et la création de <strong>applications modernes</strong>.</p>
+          <p>Je souhaite développer davantage mes <strong>compétences</strong> pour préparer le lancement de ma propre <strong>entreprise tech</strong>. Mes capacités incluent la <strong>résolution de problèmes</strong>, l'exploration de <strong>nouvelles technologies</strong> et la réalisation de <strong>projets à fort impact</strong>.</p>
+          <p>Personnellement, je suis très <strong>motivée</strong>, <strong>créative</strong>, <strong>collaborative</strong> et <strong>orientée solutions</strong>. Ma vision est de combiner <strong>expertise technique</strong> et <strong>esprit entrepreneurial</strong> pour innover dans l'<strong>industrie technologique</strong>.</p>
+          <div class="stats">
+            <div><h3>5+</h3><span><i>Projets réalisés</i></span></div>
+            <div><h3>5+</h3><span><i>Années d'expérience</i></span></div>
+            <div><h3>15+</h3><span><i>Technologies maîtrisées</i></span></div>
+          </div>
+          <p class="quote">"Je m'efforce de créer des projets impactants alliant créativité et excellence technique."</p>
+        </div>
+        <div class="right">
+          <div class="card"><i class="fa-brands fa-react"></i><h4>Frontend</h4><p><i>HTML, CSS, React JSX/TSX, Tailwind CSS, Bootstrap</i></p></div>
+          <div class="card"><i class="fa-solid fa-server"></i><h4>Backend</h4><p><i>Node.js, PHP, Python, Java, C++</i></p></div>
+          <div class="card"><i class="fa-solid fa-database"></i><h4>Bases de données</h4><p><i>MySQL, MongoDB, Oracle, Supabase</i></p></div>
+          <div class="card"><i class="fa-solid fa-tools"></i><h4>Outils & Déploiement</h4><p><i>Git, Postman, Render, ThunderClient, InfinityFree</i></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS A DROITE -->
+  <section id="skills" class="page">
+    <div class="resume">
+      <div class="skills-pro">
+        <h3><i class="fas fa-code"></i> Compétences</h3>
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3><i>Frontend</i></h3>
+            <ul>
+              <li>HTML<div class="bar"><div data-width="90%"></div></div></li>
+              <li>CSS<div class="bar"><div data-width="85%"></div></div></li>
+              <li>React<div class="bar"><div data-width="70%"></div></div></li>
+              <li>Tailwind / Bootstrap<div class="bar"><div data-width="75%"></div></div></li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3><i>Backend</i></h3>
+            <ul>
+              <li>Node.js<div class="bar"><div data-width="80%"></div></div></li>
+              <li>JAVA<div class="bar"><div data-width="90%"></div></div></li>
+              <li>PHP<div class="bar"><div data-width="75%"></div></div></li>
+              <li>Python<div class="bar"><div data-width="65%"></div></div></li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3><i>Programmation</i></h3>
+            <ul>
+              <li>JAVA<div class="bar"><div data-width="90%"></div></div></li>
+              <li>C / C++<div class="bar"><div data-width="60%"></div></div></li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3><i>Bases de données</i></h3>
+            <ul>
+              <li>MySQL<div class="bar"><div data-width="80%"></div></div></li>
+              <li>MongoDB<div class="bar"><div data-width="70%"></div></div></li>
+              <li>Oracle<div class="bar"><div data-width="80%"></div></div></li>
+              <li>Supabase<div class="bar"><div data-width="75%"></div></div></li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3><i>Outils</i></h3>
+            <ul>
+              <li>Git<div class="bar"><div data-width="75%"></div></div></li>
+              <li>Postman<div class="bar"><div data-width="70%"></div></div></li>
+              <li>Thunder Client<div class="bar"><div data-width="100%"></div></div></li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3><i>Déploiement</i></h3>
+            <ul>
+              <li>Render<div class="bar"><div data-width="100%"></div></div></li>
+              <li>InfinityFree<div class="bar"><div data-width="60%"></div></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- autres infos  a gauche -->
+      <div class="other-cards">
+        <div class="card">
+          <h2><i class="fas fa-briefcase"></i> <i>Expérience</i></h2>
+          <p>Stage Magi Bois</p>
+          <p>Développement Web</p>
+        </div>
+        <div class="card">
+          <h2><i class="fas fa-graduation-cap"></i> <i>Éducation</i></h2>
+          <p>Génie logiciel</p>
+          <p>Université Abderahmane Mira</p>
+        </div>
+        <div class="card">
+          <h2><i class="fas fa-star"></i> <i>Intérêts</i></h2>
+          <p>Technologie</p>
+          <p>Design</p>
+          <p>Innovation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="page">
+    <div class="projects-section">
+      <h1 class="title">Mes <span>Projets</span></h1>
+      <p class="subtitle"><i>Applications réelles créées avec passion</i></p>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-comments project-icon"></i>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Forum</h3>
+          <p>Forum web reliant <strong>patients et médecins</strong> — permettant des discussions médicales, des questions et des conseils dans une communauté en ligne structurée.</p>
+          <div class="project-tags">
+            <span>Web</span><span>Santé</span><span>Communauté</span>
+          </div>
+          <a href="https://github.com/ProjetsscollairesZY/Forum" class="project-link" target="_blank">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub
+          </a>
+          <a href="https://zineddineysd.wuaze.com/presentation.php?i=1" class="project-link" target="_blank">
+            <i class="fa-solid fa-eye"></i> View Project
+          </a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="project-top">
+            <i class="fa-solid fa-hospital project-icon"></i>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>OncoClinic</h3>
+          <p>Système complet de gestion hospitalière pour une <strong>clinique d'oncologie</strong> — gestion des patients, dossiers médicaux, rendez-vous et chatbot <strong>IA intégré</strong> pour les patients.</p>
+          <div class="project-tags">
+            <span>Web App</span><span>Oncologie</span><span>Chatbot</span><span>IA</span>
+          </div>
+          <a href="https://github.com/ProjetsscollairesZY/oncoclinic" class="project-link" target="_blank">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub
+          </a>
+          <a href="https://lien-vers-le-projet.com" class="project-link" target="_blank">
+            <i class="fa-solid fa-eye"></i> View Project
+          </a>
+          <a href="/assets/Onco.pdf"class="project-link pdf" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i> Rapport PDF
+          </a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <i class="fa-solid fa-scale-balanced project-icon"></i>
+            <span class="project-year">2026</span>
+          </div>
+          <h3>Justice DZ</h3>
+          <p>Application de gestion des tribunaux pour les <strong>tribunaux algériens</strong> — suivi des affaires, planification des audiences et gestion des flux judiciaires.</p>
+          <div class="project-tags">
+            <span>Gestion</span><span>Légal</span><span>Algérie</span>
+          </div>
+          <a href="https://github.com/ProjetsscollairesZY/justice-backend" class="project-link" target="_blank">
+            <i class="fa-brands fa-github"></i> Voir sur GitHub
+          </a>
+          <a href="https://justicedz.netlify.app/home" class="project-link" target="_blank">
+            <i class="fa-solid fa-eye"></i> View Project
+          </a>
+          <a href="/assets/justice.pdf" class="project-link pdf" target="_blank">
+            <i class="fa-solid fa-file-pdf"></i> Rapport PDF
+          </a>
+        </div>
+       
+<div class="project-card">
+  <div class="project-top">
+    <i class="fa-solid fa-calendar-days project-icon"></i>
+    <span class="project-year">2024</span>
+  </div>
+  <h3>Planner</h3>
+  <p>Application de planification personnelle — permet de gérer tâches, rendez-vous et objectifs quotidiens efficacement.</p>
+  <div class="project-tags">
+    <span>Web</span><span>Organisation</span><span>Productivité</span>
+  </div>
+  <a href="https://github.com/yousramameri/Planner" class="project-link" target="_blank">
+    <i class="fa-brands fa-github"></i> Voir sur GitHub
+  </a>
+
+</div>
+
+
+<div class="project-card">
+  <div class="project-top">
+    <i class="fa-solid fa-calculator project-icon"></i>
+    <span class="project-year">2024</span>
+  </div>
+  <h3>Gestionnaire de Dépenses</h3>
+  <p>Application pour calculer les dépenses et économies — aide les utilisateurs à suivre leur budget et optimiser leurs finances personnelles.</p>
+  <div class="project-tags">
+    <span>Web App</span><span>Finance</span><span>Budget</span>
+  </div>
+  <a href="https://github.com/yousramameri/depenses" class="project-link" target="_blank">
+    <i class="fa-brands fa-github"></i> Voir sur GitHub
+  </a>
+  <a href="https://depenses-vi03.onrender.com" class="project-link" target="_blank">
+    <i class="fa-solid fa-eye"></i> View Project
+  </a>
+</div>
+
+<div class="project-card">
+  <div class="project-top">
+    <i class="fa-solid fa-plane-departure project-icon"></i>
+    <span class="project-year">2026</span>
+  </div>
+  <h3>Agence de voyage Interface</h3>
+  <p>Interfaces pour agences de voyage conçues pour être modernes et attractives. Chaque design allie style tendance, esthétique soignée et expérience utilisateur fluide.</p>
+  <div class="project-tags">
+    <span>Web App</span><span>Voyage</span><span>Booking</span>
+  </div>
+  <a href="https://github.com/yousramameri/voyage" class="project-link" target="_blank">
+    <i class="fa-brands fa-github"></i> Voir sur GitHub
+  </a>
+
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="page contact">
+    <div class="container">
+      <h2>Contactez-moi</h2>
+      <p>Vous pouvez me contacter par email ou laisser un message via le formulaire ci-dessous.</p>
+      <div class="contact-info">
+        <div class="info-item"><i class="fa-solid fa-envelope"></i><span>mameriyousra@gmail.com</span></div>
+        <div class="info-item"><i class="fa-brands fa-github"></i><span><a href="https://github.com/yousramameri" target="_blank">github.com/Yousra-Mameri</a></span></div>
+      </div>
+
+      <!-- formulaire contact -->
+      <form class="contact-form" id="contact-form">
+        <input type="text" name="user_name" placeholder="Votre nom" required>
+        <input type="email" name="user_email" placeholder="Votre email" required>
+        <input type="text" name="subject" placeholder="Sujet" required>
+        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+        <button type="submit" id="send-btn">Envoyer le message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+</div>
+
+<!-- NAV BUTTONS -->
+<div class="nav-buttons">
+  <button onclick="prevPage()" class="nav-btn"><i class="fas fa-arrow-left"></i></button>
+  <button onclick="nextPage()" class="nav-btn"><i class="fas fa-arrow-right"></i></button>
+</div>
+
+<script src="/script/script.js"></script>
+
+<!-- EmailJS connexion -->
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  const btn = document.getElementById("send-btn");
+  const status = document.getElementById("form-status");
+
+  btn.textContent = "Envoi...";
+  btn.disabled = true;
+
+  emailjs.sendForm("service_ac8pqrb", "template_s50qwxm", this)
+    .then(() => {
+      status.textContent = "Message envoyé avec succès !";
+      status.style.color = "#38bdf8";
+      this.reset();
+      btn.textContent = "Envoyer le message";
+      btn.disabled = false;
+    })
+    .catch((err) => {
+      status.textContent = "Échec de l'envoi. Essayez d'envoyer directement par email.";
+      status.style.color = "#f87171";
+      btn.textContent = "Envoyer le message";
+      btn.disabled = false;
+    });
+});
+</script>
+</body>
+</html>
